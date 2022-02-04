@@ -70,12 +70,32 @@
 
 //დავალება 4
 
-function number(...args) {
+//შექმენით ფუნქცია რომელსაც გადაეცემა ერთი პარამეტრი.
+// ეს პარამეტრი უნდა იყოს რიცხვების მასივი და ფუნქციამ უნდა დააბრუნოს ამ რიცხვებიდან მაქსიმალური:
 
-    //?????????????????????????????????
-}
+// function numbers(...args) {
+//     let maxNumber = args[0]
+//     for (let item of args) {
+//         if (item > maxNumber) {
+//             maxNumber = item;
+//         }
+//     }
+//     return maxNumber;
+// }
 
-let result = number(2, 4, 6, 8, 10);
-console.log(result);
+// let result = numbers(2, 7, 9, 23, 15, 8, 4);
 
-//??????????????????????????????????
+//იგივე ამოცანა მინიმალურის შემთხვევაში:
+
+// function numbers(...args) {
+//     let minNumber = args[0];
+//     for (let item = 0; item < args.length; item++) {
+//         if (args[item] < minNumber) {
+//             minNumber = args[item]
+//         }
+//     }
+//     return minNumber
+// }
+
+// let result = numbers(7, 9, 23, 15, 8, 4, 2);
+// console.log(result);
